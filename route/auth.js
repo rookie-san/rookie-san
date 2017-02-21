@@ -147,7 +147,7 @@ function setupRouter() {
         req.session.source)
       .then(chat => {
         res.send('<script>window.close()</script>');
-        line.push(chat.lineId, line.text(__("Auth completed! Welcome," + req.session.passport.user.displayName)));
+        line.push(chat.lineId, line.text(__("Auth completed! Welcome %s", req.session.passport.user.displayName)));
         line.push(chat.lineId, line.template(__("Set language"), actionBasic.setLanguage(__("language"))));
 
       })

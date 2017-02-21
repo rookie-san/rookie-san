@@ -1,19 +1,19 @@
 {
-	"Help message": "Thank you for calling me, sir! Below are the orders you can give me:\n@lang: use the language you prefer (ex. @lang en or @lang ja or @lang ko)\n@add: add new Google Analytics site to my list\n@init: remove all sites from my list",
-	"Set language": "Please let me know the language your prefer like this way: @lang/en @lang/ja\nOr just check it on your mobile ~!",
+	"Help message": "Thank you for calling me, sir! I understand these orders:\n@lang: change the language (ex. @lang en or @lang ja or @lang ko)\n@add: add new Google Analytics site to the list\n@init: remove all sites from the list",
+	"Set language": "Please let me know the language your prefer like this way: @lang en @lang ja\nOr just check it on your mobile ~!",
 	"language": {
 		"title": "Set your language",
 		"text": "Please let me know the language your prefer"
 	},
-	"No auth token": "Sorry, sir! You didn't add any Google Analytics site yet. Please click https://analytics.google.com/ and send me back the URL displayed in your browser. I will add it myself!",
-	"Unknown command": "Unknown command",
+	"No auth token": "Sorry, sir! You didn't add any Google Analytics site yet. Please click https://analytics.google.com/ and send me back the URL displayed in your browser. Then I will add it myself!",
+	"Unknown command": "Sorry, sir! That is a command I don't understand..",
 	"Language changed to %s": "Yes, sir! From now, I will use %s in this conversation!",
 	"en": "English",
 	"ja": "Japanese",
 	"ko": "Korean",
 	"howto": {
 		"title": "How to ask Rookie!",
-		"text": "Send sticky or text to Rookie and bring in the data!"
+		"text": "Send sticker or text to Rookie and bring in the data!"
 	},
 	"add": {
 		"title": "Add your Google Analytics account!",
@@ -21,12 +21,12 @@
 	},
 	"init": {
 		"title": "Refresh chatting room!",
-		"text": "Yes~ sir! I will refresh Google analytics list completely."
+		"text": "Yes~ sir! I will initialize Google analytics list completely."
 	},
 	"sorry": {
 		"title": "I'm sorry TT",
 		"text": "I do not know how to help you. I will study more and better!"
 	},
-	"Auth completed": "Auth completed",
-	"Auth completed! Welcome,Jude Park": "Auth completed! Welcome,Jude Park"
+	"Auth completed! Welcome, %s": "Auth completed! Welcome, %s",
+	"Already added GA account: UA-%s": "Already added GA account: UA-%s"
 }

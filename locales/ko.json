@@ -26,6 +26,7 @@
 	"sorry": {
 		"title": "죄송합니다 ㅠㅠ",
 		"text": "제가 아직 모르는 것들이 많이 있습니다. 앞으로 더 많이 공부해서 나아지겠습니다!"
-
-	}
+	},
+	"Auth completed! Welcome,진헌규": "Auth completed! Welcome,진헌규",
+	"Already added GA account: UA-%s": "Already added GA account: UA-%s"
 }
