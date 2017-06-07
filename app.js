@@ -35,12 +35,16 @@ var logger = require('./module/logger');
 var ga = require('./module/ga');
 var auth = require('./route/auth');
 var webhook = require('./route/webhook');
+var kakao = require('./route/kakao/index');
+
 
 ga.runServer();
 
+app.use('/kakao', bodyParser.json(), kakao);
 app.use('/auth', auth);
 app.use('/webhook', bodyParser.json(), webhook);
 app.use('/public', express.static('./public'));
+
 
 app.listen(process.env.PORT, function() {
   logger.info('Listening on port ', process.env.PORT);
