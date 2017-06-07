@@ -21,12 +21,13 @@
 	},
 	"init": {
 		"title": "Refresh chatting room!",
-		"text": "Yes~ sir! I will initialize Google analytics list completely."
+		"text": "Yes~ sir! I will initialize GA list completely."
 	},
 	"sorry": {
 		"title": "I'm sorry TT",
 		"text": "I do not know how to help you. I will study more and better!"
 	},
 	"Auth completed! Welcome, %s": "Auth completed! Welcome, %s",
-	"Already added GA account: UA-%s": "Already added GA account: UA-%s"
+	"Already added GA account: UA-%s": "Already added GA account: UA-%s",
+	"Auth completed! Welcome %s": "Auth completed! Welcome %s"
 }

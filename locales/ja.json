@@ -26,5 +26,6 @@
 	"sorry": {
 		"title": "申し訳ありません！",
 		"text": "私はあなたを助ける方法を知らない。 私はもっとよく勉強します！"
-	}
+	},
+	"Already added GA account: UA-%s": "Already added GA account: UA-%s"
 }

@@ -162,6 +162,7 @@ function setLanguage(language) {
     "type": "buttons",
     "title": language.title,
     "text": language.text,
+    "thumbnailImageUrl": "https://statsbot-dusskapark.c9users.io/public/1488178510976.jpg",
     "actions": [{
       "type": "postback",
       "label": "Japanese",
