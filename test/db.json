@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "name": "Joohyung",
+      "age": 30,
+      "income": 1000,
+      "devices": [ "Macbook13", "iPhone" ]
+    },
+    {
+      "name": "Heonkyu",
+      "age": 40,
+      "income": 1000,
+      "devices": [ "Macbook15", "Galaxy" ]
+    }
+  ],
+  
+  "devices": {
+    "Macbook13": {
+      "price": 100,
+      "weight": 100
+    },
+    "Macbook15": {
+      "price": 120,
+      "weight": 150
+    },
+    "iPhone": {
+      "price": 50,
+      "weight": 15
+    },
+    "Galaxy": {
+      "price": 30,
+      "weight": 20
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "chats": [
+    {
+      "chatId": "room:R3d44dc1e45f4286146828ba00d58ccf2",
+      "authId": "google:106420000971171195152",
+      "viewID": "129273565",
+      "displayName": "Jude Park",
+      "email": "dusskapark@gmail.com",
+      "language": "ko",
+      "accessToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "refreshToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "source": {
+        "roomId": "R3d44dc1e45f4286146828ba00d58ccf2",
+        "type": "room"
+      }
+    },
+    {
+      "chatId": "room:R3d44dc1e45f4286146828ba00d58ccf2",
+      "authId": "google:106420000971171195152",
+      "viewID": "129273565",
+      "displayName": "Jude Park",
+      "email": "dusskapark@gmail.com",
+      "language": "ko",
+      "accessToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "refreshToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "source": {
+        "roomId": "R3d44dc1e45f4286146828ba00d58ccf2",
+        "type": "room"
+      }
+    },
+    {
+      "chatId": "room:R3d44dc1e45f4286146828ba00d58ccf2",
+      "authId": "google:106420000971171195152",
+      "viewID": "129273565",
+      "displayName": "Jude Park",
+      "email": "dusskapark@gmail.com",
+      "language": "ko",
+      "accessToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "refreshToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "source": {
+        "roomId": "R3d44dc1e45f4286146828ba00d58ccf2",
+        "type": "room"
+      }
+    },
+    {
+      "chatId": "room:R3d44dc1e45f4286146828ba00d58ccf2",
+      "authId": "google:106420000971171195152",
+      "viewID": "129273565",
+      "displayName": "Jude Park",
+      "email": "dusskapark@gmail.com",
+      "language": "ko",
+      "accessToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "refreshToken": "ya29.GlzvA2P7Lpsiu1VMCbhtd7aE_DnQ-x6dcVE8vPWj5zuVsownJL9BOarEU7iwLjMfh7YD_a_9kKbugfsQ3nT-luW-kKyPo5EZaH6VtE2RNOilYe57TutCh1VilM_KhA",
+      "source": {
+        "roomId": "R3d44dc1e45f4286146828ba00d58ccf2",
+        "type": "room"
+      }
+    }
+  ]
+}
