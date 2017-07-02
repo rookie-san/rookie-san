@@ -3,6 +3,8 @@ const passport = require('passport');
 const google = require('passport-google-oauth20').Strategy;
 const i18n = require('i18n');
 const actionBasic = require('./basic'); // 명령어 모음
+// const queryString = require('query-string');
+
 
 
 const SCOPES = [
@@ -101,17 +103,13 @@ function setupRouter() {
   });
 
   // 로그인 시, 챗방id, 계정정보, 뷰 정보를 쿠키로 전달
-  // 이미 연결된 lineId가 있는 경우, Stop
+  // 이미 연결된 LINE ID가 있는 경우, Stop
   router.get('/google/login', function(req, res, next) {
 
-      var source = {
-        type: req.query.type,
-        lineId: req.query.id,
-        gaAccountId: req.query.account,
-        gaViewId: req.query.view
-      };
+      var source = req.query;
+      logger.debug(source);
 
-      var isNa = db.chat.findByID(source.lineId);
+      var isNa = db.chat.findByID(source.id);
       logger.info('google oauth login()', isNa);
 
       if (isNa == undefined) {
@@ -119,8 +117,14 @@ function setupRouter() {
         next();
       }
       else {
-        res.send('<script>window.close()</script>');
-        line.push(source.lineId, line.text(__('Already added GA account: UA-%s', isNa.gaAccountId)));
+        logger.info('Already added GA account: UA-%s', isNa.gaAccountId);
+        if (source.provider == "line") {
+          res.send('<script>window.close()</script>');
+          line.push(source.id, line.text(__('Already added GA account: UA-%s', isNa.gaAccountId)));
+        }
+        else {
+          res.send('<script>window.close()</script>');
+        }
       }
     },
     passport.authenticate('google', {
@@ -146,15 +150,43 @@ function setupRouter() {
         req.session.passport.user.googleId,
         req.session.source)
       .then(chat => {
-        res.send('<script>window.close()</script>');
-        line.push(chat.lineId, line.text(__("Auth completed! Welcome %s", req.session.passport.user.displayName)));
-        line.push(chat.lineId, line.template(__("Set language"), actionBasic.setLanguage(__("language"))));
+        logger.info("Auth completed! Welcome %s", req.session.passport.user.displayName)
+        if (req.session.source.provider == "line") {
+          line.push(chat.id, line.text(__("Auth completed! Welcome %s", req.session.passport.user.displayName)));
+          line.push(chat.id, line.template(__("Set language"), actionBasic.setLanguage(__("language"))));
+          res.send('<script>window.close()</script>');
+        }
+        else {
+          res.send('<script>window.close()</script>');
+        }
 
       })
       .catch(err => {
         logger.error('Error in writing chat', err);
-      })
+      });
   });
-  
+
   return router;
 }
+
+// function getSource (query) {
+//   switch(query.provider){
+//     case 'kakao':
+//       return {
+//         provider: query.provider,
+//         id: query.id
+//       };
+
+//     default:
+//       return {
+//         provider: query.provider,
+//         type: query.type,
+//         id: query.id,
+//         gaAccountId: query.account,
+//         gaViewId: query.view
+//       };
+//   }
+// }
+
+// var test = "http://naver.com?provider=kakao&type=user&id=123456"
+// getSource(test)

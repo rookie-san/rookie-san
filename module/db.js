@@ -62,9 +62,9 @@ function chat() {
    * ID로 챗방 조회
    * 
    */
-  instance.findByID = function(id) {
+  instance.findByID = function(chatId) {
     return instance.chats.find({
-      lineId: id
+      id: chatId
     }).value();
   }
 
@@ -78,21 +78,43 @@ function chat() {
     logger.debug('chat.js source:', source);
   
     var chat = {
+      provider: source.provider,
       type: source.type,
-      lineId: source.lineId,
+      id: source.id,
       gaViewId: source.gaViewId,
       gaAccountId: source.gaAccountId,
       googleId: googleId
     };
   
     var c = instance.chats.find({
-      lineId: source.lineId
+      id: source.id
     });
   
     return c.value() ?
       c.assign(chat).write() :
       instance.chats.push(chat).last().write();
   }
+  
+  // instance.kakaoSave = function(source) {
+  //   logger.info('chat.kakaoSave()');
+  //   logger.debug('chat.js source:', source);
+  
+  //   var chat = {
+  //     provider: source.provider,
+  //     type: source.type,
+  //     id: source.id,
+  //     gaViewId: source.gaViewId,
+  //     gaAccountId: source.gaAccountId
+  //   };
+  
+  //   var c = instance.chats.find({
+  //     id: source.id
+  //   });
+  
+  //   return c.value() ?
+  //     c.assign(chat).write() :
+  //     instance.chats.push(chat).last().write();
+  // }
   
   /**
    * 
@@ -104,24 +126,24 @@ function chat() {
     } catch (err) {
       return 'en';
     }
-  }
+  };
   
   /**
    * 채팅방 주사용언어 변경
    *
    */
-  instance.changeLocale = function(lineId, locale) {
+  instance.changeLocale = function(chatId, locale) {
     logger.info('chat.changeLocale()');
-    logger.debug('chat.js lineId:', lineId);
+    logger.debug('chat.js id:', chatId);
     logger.debug('chat.js locale:', locale);
     var c = instance.chats.find({
-      lineId: lineId
+      id: chatId
     });
     
     c.value() ?
       c.assign({ locale: locale}).write() :
-      instance.chats.push({ lineId: lineId, locale: locale}).last().write()
-  }
+      instance.chats.push({ id: chatId, locale: locale}).last().write();
+  };
   
   return instance;
 }

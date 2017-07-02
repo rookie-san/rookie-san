@@ -1,4 +1,14 @@
 {
+	"Kakao help": "Thank you for calling me, sir! Please see the buttons below",
+	"Browser buttons": {
+		"type": "buttons",
+		"buttons": [
+			"Google_app", 
+			"Chrome_app", 
+			"Naver_app"
+		]
+	},
+	"Set browser": "Please let me know the browser you prefer",
 	"Help message": "Thank you for calling me, sir! I understand these orders:\n@lang: change the language (ex. @lang en or @lang ja or @lang ko)\n@add: add new Google Analytics site to the list\n@init: remove all sites from the list",
 	"Set language": "Please let me know the language your prefer like this way: @lang en @lang ja\nOr just check it on your mobile ~!",
 	"language": {

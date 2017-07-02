@@ -6,6 +6,9 @@ function url_node(path) {
   return `http://${process.env.C9_HOSTNAME}:${process.env.C9_PORT}${path}`;
 }
 
+function browserHandler(browser, path, params){
+  return `${browser}${process.env.C9_HOSTNAME}:${process.env.C9_PORT}${path}?${params}`;
+}
 /**
  * 아파치가 처리하는 https URL을 리턴
  * 
@@ -16,5 +19,6 @@ function url_https(path) {
 
 module.exports = {
   url_node : url_node,
-  url_https: url_https
+  url_https: url_https,
+  browserHandler: browserHandler
 }

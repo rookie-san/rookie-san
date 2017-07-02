@@ -1,4 +1,14 @@
 {
+	"Kakao help": "私に電話していただきありがとうございます！下記のボタンをご覧ください",
+	"Browser buttons": {
+		"type": "buttons",
+		"buttons": [
+			"Google_app", 
+			"Chrome_app", 
+			"Naver_app"
+			]
+	},
+	"Set browser": "あなたが好きなブラウザを教えてください",
 	"Help message": "私に電話していただきありがとうございます！\n@lang：好きな言語を使用する\n@add: 新しいGoogle Analyticsサイトを自分のリストに追加する\n@init: 私のリストからすべてのサイトを削除する",
 	"Set language": "@lang jaこのように教えていただければ、私は希望の言語を設定することができます\nまたは携帯電話からの確認と簡単です〜！",
 	"language": {

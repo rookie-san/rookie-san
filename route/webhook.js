@@ -179,7 +179,7 @@ function urlHandler(source, replyToken, url) {
     var viewId = params.split('p')[1].split('/')[0];
     logger.debug('urlHandler(): ga = ', accountId, viewId);
 
-    var authURL = `${LOGIN_URL}?type=${source.type}&id=${sourceId}&account=${accountId}&view=${viewId}`;
+    var authURL = `${LOGIN_URL}?provider=line&type=${source.type}&id=${sourceId}&account=${accountId}&view=${viewId}`;
 
     var tempURL = {
       "type": "carousel",
